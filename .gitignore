@@ -1,36 +1,48 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Geral
 
-# dependencies
-node_modules/
-
-# Expo
+.DS_Store
 .expo/
-dist/
-web-build/
 .idea/
 
-# Native
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# Primeiro Projeto React
 
-# Metro
-.metro-health-check*
+primeiro-projeto-react/node_modules/
+primeiro-projeto-react/.expo/
+primeiro-projeto-react/dist/
+primeiro-projeto-react/web-build/
+primeiro-projeto-react/.idea/
+primeiro-projeto-react/*.orig.*
+primeiro-projeto-react/*.jks
+primeiro-projeto-react/*.p8
+primeiro-projeto-react/*.p12
+primeiro-projeto-react/*.key
+primeiro-projeto-react/*.mobileprovision
+primeiro-projeto-react/.metro-health-check*
+primeiro-projeto-react/npm-debug.*
+primeiro-projeto-react/yarn-debug.*
+primeiro-projeto-react/yarn-error.*
+primeiro-projeto-react/.DS_Store
+primeiro-projeto-react/.env*.local
+primeiro-projeto-react/*.tsbuildinfo
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
 
-# macOS
-.DS_Store
-*.pem
+# React Hooks
 
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
+hooks-react/node_modules/
+hooks-react/.expo/
+hooks-react/dist/
+hooks-react/web-build/
+hooks-react/.idea/
+hooks-react/*.orig.*
+hooks-react/*.jks
+hooks-react/*.p8
+hooks-react/*.p12
+hooks-react/*.key
+hooks-react/*.mobileprovision
+hooks-react/.metro-health-check*
+hooks-react/npm-debug.*
+hooks-react/yarn-debug.*
+hooks-react/yarn-error.*
+hooks-react/.DS_Store
+hooks-react/.env*.local
+hooks-react/*.tsbuildinfo
