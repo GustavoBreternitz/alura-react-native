@@ -1,18 +1,24 @@
-import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import React, { useReducer } from "react";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import Stars from "../../components/Stars";
 
 export default function Producer(data) {
+
+    // o useReducer, aceita uma função como primeiro parametro, essa função recebe um estado e uma ação, com isso podemos passar a 
+    // responsabilidade do setEdit para a função que é o primeiro parametro do reducer * é a mesma coisa que o useState
+    const [edit, setEdit] = useReducer((edit, action) => {return !edit;}, false)
+
     return (
-        <View style={styles.shop_box}>
+        <TouchableOpacity style={styles.shop_box} onPress={setEdit}>
             <Image source={data.imagem} style={styles.shop_image} />
             <View style={styles.info}>
             <View>
                 <Text style={styles.title}>{data.nome}</Text>
-                <Text>{data.estrelas}</Text>
+                <Stars props={{qtd: data.estrelas, edit: edit}}/>
             </View>
             <Text style={styles.subtitle}>{data.distancia}</Text>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
 
